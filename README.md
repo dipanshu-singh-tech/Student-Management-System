@@ -14,15 +14,26 @@ A Java-based console application to manage student records using JDBC and Postgr
 - JDBC
 - PostgreSQL
 
+
 ## ⚙️ Setup Instructions
 
-### 1. Set Environment Variables
+1. Install PostgreSQL
+2. Create database and table:
 
-DB_URL=your_database_url
-DB_USER=your_username
-DB_PASS=your_password
+```sql
+CREATE TABLE student (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50),
+  email VARCHAR(50),
+  phone VARCHAR(15),
+  course VARCHAR(50),
+  age INT
+);
 
+3.Create DBConfig.java:
 
-### 2. Run The Application
-
-Our Application is ready now.
+public class DBConfig {
+    public static String url = "jdbc:postgresql://localhost:5432/yourdb";
+    public static String user = "postgres";
+    public static String pass = "yourpassword";
+}
