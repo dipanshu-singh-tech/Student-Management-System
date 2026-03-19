@@ -29,7 +29,7 @@ CREATE TABLE student (
   course VARCHAR(50),
   age INT
 );
-
+sql```
 ## 3.Create DBConfig.java:
 
 public class DBConfig {
