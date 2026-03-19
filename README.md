@@ -30,7 +30,7 @@ CREATE TABLE student (
   age INT
 );
 
-3.Create DBConfig.java:
+## 3.Create DBConfig.java:
 
 public class DBConfig {
     public static String url = "jdbc:postgresql://localhost:5432/yourdb";
