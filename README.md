@@ -18,9 +18,9 @@ A Java-based console application to manage student records using JDBC and Postgr
 ## ⚙️ Setup Instructions
 
 1. Install PostgreSQL
+   
 2. Create database and table:
 
-```sql
 CREATE TABLE student (
   id SERIAL PRIMARY KEY,
   name VARCHAR(50),
@@ -29,7 +29,7 @@ CREATE TABLE student (
   course VARCHAR(50),
   age INT
 );
-sql```
+
 ## 3.Create DBConfig.java:
 
 public class DBConfig {
